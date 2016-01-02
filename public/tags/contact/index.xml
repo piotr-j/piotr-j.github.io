@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contact on PiotrJ</title>
+    <link>https://piotr-j.github.io/site/tags/contact/</link>
+    <description>Recent content in Contact on PiotrJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015 Piotr Jastrzębski</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://piotr-j.github.io/site/tags/contact/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>contact</title>
+      <link>https://piotr-j.github.io/site/page/contact/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://piotr-j.github.io/site/page/contact/</guid>
+      <description>&lt;p&gt;Fastest way to contact me is to send me an &lt;a href=&#34;me@piotrjastrzebski.io&#34;&gt;email&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can also find me on &lt;a href=&#34;https://www.linkedin.com/profile/view?id=289548369&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

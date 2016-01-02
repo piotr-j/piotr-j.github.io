@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on PiotrJ</title>
+    <link>https://piotr-j.github.io/site/post/</link>
+    <description>Recent content in Posts on PiotrJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015 Piotr Jastrzębski</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0100</lastBuildDate>
+    <atom:link href="https://piotr-j.github.io/site/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>New site!</title>
+      <link>https://piotr-j.github.io/site/2016/01/01/new-site/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://piotr-j.github.io/site/2016/01/01/new-site/</guid>
+      <description>
+
+&lt;h1 id=&#34;welcome:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Welcome!&lt;/h1&gt;
+
+&lt;p&gt;New slick site made with awesome Hugo!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
