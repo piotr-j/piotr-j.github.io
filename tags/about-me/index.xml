@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Me on PiotrJ</title>
-    <link>https://piotr-j.github.io/site/tags/about-me/</link>
+    <link>https://piotr-j.github.io/tags/about-me/</link>
     <description>Recent content in About Me on PiotrJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Piotr Jastrzębski</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0100</lastBuildDate>
-    <atom:link href="https://piotr-j.github.io/site/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://piotr-j.github.io/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>https://piotr-j.github.io/site/page/about/</link>
+      <link>https://piotr-j.github.io/page/about/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/page/about/</guid>
+      <guid>https://piotr-j.github.io/page/about/</guid>
       <description>&lt;p&gt;My name is Piotr Jastrzębski, I&amp;rsquo;m a graduate of &lt;a href=&#34;http://en.pollub.pl/&#34;&gt;Lublin University of Technology&lt;/a&gt; in Computer Science with speciality in Software Development Technologies. Currently I focus on making games and tools in Java.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ve found Java to be most usefull in cross-platform development. I&amp;rsquo;ve used it mainly for games with the LibGDX framework and for Android apps.

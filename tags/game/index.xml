@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Game on PiotrJ</title>
-    <link>https://piotr-j.github.io/site/tags/game/</link>
+    <link>https://piotr-j.github.io/tags/game/</link>
     <description>Recent content in Game on PiotrJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Piotr Jastrzębski</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 01:00:00 +0100</lastBuildDate>
-    <atom:link href="https://piotr-j.github.io/site/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://piotr-j.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Project Sim</title>
-      <link>https://piotr-j.github.io/site/project/project-sim/</link>
+      <link>https://piotr-j.github.io/project/project-sim/</link>
       <pubDate>Fri, 01 Jan 2016 01:00:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/project-sim/</guid>
+      <guid>https://piotr-j.github.io/project/project-sim/</guid>
       <description>
 
 &lt;h1 id=&#34;project-sim:1d3f1c3a550bd8331d1f143b7d3cce14&#34;&gt;Project Sim&lt;/h1&gt;
@@ -26,25 +26,25 @@
     
     <item>
       <title>Duality</title>
-      <link>https://piotr-j.github.io/site/project/duality/</link>
+      <link>https://piotr-j.github.io/project/duality/</link>
       <pubDate>Fri, 01 Jan 2016 00:35:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/duality/</guid>
+      <guid>https://piotr-j.github.io/project/duality/</guid>
       <description>&lt;p&gt;Duality was my entry for Ludum Dare 30. It is run from console and was made in Go programming language. Source on available on &lt;a href=&#34;https://github.com/piotr-j/DualityLD30&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/duality.jpg&#34; alt=&#34;duality screenshot 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/duality.jpg&#34; alt=&#34;duality screenshot 1&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Project R</title>
-      <link>https://piotr-j.github.io/site/project/project-r/</link>
+      <link>https://piotr-j.github.io/project/project-r/</link>
       <pubDate>Fri, 01 Jan 2016 00:25:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/project-r/</guid>
+      <guid>https://piotr-j.github.io/project/project-r/</guid>
       <description>&lt;p&gt;Project R is was an university game project I did during my exchange in Spain. The game is written in Java and uses LibGDX  as its main framework. Another important part is Spine , advanced tool for 2D animation. The game features three heroes with various abilities. The goal is to reach to lowest possible level of the dungeon. To do that player has to defeat the monsters and other obstacles. Its optimized for touch input. Some of the art was created by  Dariusz T.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/projectr.png&#34; alt=&#34;project r screenshot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/projectr.png&#34; alt=&#34;project r screenshot&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

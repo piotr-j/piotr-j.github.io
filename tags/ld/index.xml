@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ld on PiotrJ</title>
-    <link>https://piotr-j.github.io/site/tags/ld/</link>
+    <link>https://piotr-j.github.io/tags/ld/</link>
     <description>Recent content in Ld on PiotrJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Piotr Jastrzębski</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 00:35:00 +0100</lastBuildDate>
-    <atom:link href="https://piotr-j.github.io/site/tags/ld/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://piotr-j.github.io/tags/ld/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Duality</title>
-      <link>https://piotr-j.github.io/site/project/duality/</link>
+      <link>https://piotr-j.github.io/project/duality/</link>
       <pubDate>Fri, 01 Jan 2016 00:35:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/duality/</guid>
+      <guid>https://piotr-j.github.io/project/duality/</guid>
       <description>&lt;p&gt;Duality was my entry for Ludum Dare 30. It is run from console and was made in Go programming language. Source on available on &lt;a href=&#34;https://github.com/piotr-j/DualityLD30&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/duality.jpg&#34; alt=&#34;duality screenshot 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/duality.jpg&#34; alt=&#34;duality screenshot 1&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

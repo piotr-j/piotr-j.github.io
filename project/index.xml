@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on PiotrJ</title>
-    <link>https://piotr-j.github.io/site/project/</link>
+    <link>https://piotr-j.github.io/project/</link>
     <description>Recent content in Projects on PiotrJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Piotr Jastrzębski</copyright>
     <lastBuildDate>Fri, 01 Jan 2016 01:00:00 +0100</lastBuildDate>
-    <atom:link href="https://piotr-j.github.io/site/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://piotr-j.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Project Sim</title>
-      <link>https://piotr-j.github.io/site/project/project-sim/</link>
+      <link>https://piotr-j.github.io/project/project-sim/</link>
       <pubDate>Fri, 01 Jan 2016 01:00:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/project-sim/</guid>
+      <guid>https://piotr-j.github.io/project/project-sim/</guid>
       <description>
 
 &lt;h1 id=&#34;project-sim:1d3f1c3a550bd8331d1f143b7d3cce14&#34;&gt;Project Sim&lt;/h1&gt;
@@ -26,34 +26,34 @@
     
     <item>
       <title>Smooth Box2d Lights</title>
-      <link>https://piotr-j.github.io/site/project/b2dlights/</link>
+      <link>https://piotr-j.github.io/project/b2dlights/</link>
       <pubDate>Fri, 01 Jan 2016 00:55:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/b2dlights/</guid>
+      <guid>https://piotr-j.github.io/project/b2dlights/</guid>
       <description>&lt;p&gt;Extension to libgdx box2d lights that implements &amp;ldquo;smooth&amp;rdquo; lights. Default box2d lights are very &amp;ldquo;jumpy&amp;rdquo; due to them using simple raycasts spaced out at certain angle.
 Unless that angle is small, the gaps between individual lights cause the jumps. Smooth lights solve this problem by casting additional rays to vertices of objects in lights range.
 This is less efficient then a light with same maximum ray count, but results in a lot better visual effect.
-This extension is used in &lt;a href=&#34;https://piotr-j.github.io/site/projects/project-sim&#34;&gt;Project Sim&lt;/a&gt; and will be open sourced sometime after its release.&lt;/p&gt;
+This extension is used in &lt;a href=&#34;https://piotr-j.github.io/projects/project-sim&#34;&gt;Project Sim&lt;/a&gt; and will be open sourced sometime after its release.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Behaviour Tree Editor</title>
-      <link>https://piotr-j.github.io/site/project/bte/</link>
+      <link>https://piotr-j.github.io/project/bte/</link>
       <pubDate>Fri, 01 Jan 2016 00:50:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/bte/</guid>
-      <description>&lt;p&gt;WIP Behaviour Tree Editor for GDX-AI. &lt;a href=&#34;https://piotr-j.github.io/site/projects/project-sim&#34;&gt;Project Sim&lt;/a&gt; uses behaviour trees extensively and editing them in simple text editor is quite cumbersome.
+      <guid>https://piotr-j.github.io/project/bte/</guid>
+      <description>&lt;p&gt;WIP Behaviour Tree Editor for GDX-AI. &lt;a href=&#34;https://piotr-j.github.io/projects/project-sim&#34;&gt;Project Sim&lt;/a&gt; uses behaviour trees extensively and editing them in simple text editor is quite cumbersome.
 This deticated library is sedigned to solve this problem.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Dungen</title>
-      <link>https://piotr-j.github.io/site/project/dungen/</link>
+      <link>https://piotr-j.github.io/project/dungen/</link>
       <pubDate>Fri, 01 Jan 2016 00:45:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/dungen/</guid>
+      <guid>https://piotr-j.github.io/project/dungen/</guid>
       <description>&lt;p&gt;Web based dungeon generator inspired by &lt;a href=&#34;https://github.com/adonaac/blog/issues/7&#34;&gt;this post&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://piotr-j.github.io/dungen/dungen/&#34;&gt;https://piotr-j.github.io/dungen/dungen/&lt;/a&gt;&lt;/p&gt;
@@ -62,10 +62,10 @@ This deticated library is sedigned to solve this problem.&lt;/p&gt;
     
     <item>
       <title>Super Flying Gentleman</title>
-      <link>https://piotr-j.github.io/site/project/super-flying-gentleman/</link>
+      <link>https://piotr-j.github.io/project/super-flying-gentleman/</link>
       <pubDate>Fri, 01 Jan 2016 00:40:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/super-flying-gentleman/</guid>
+      <guid>https://piotr-j.github.io/project/super-flying-gentleman/</guid>
       <description>&lt;p&gt;Super Flying Gentlement is my first released game. It is heavily inspired by indie hit, Flappy Bird. I wanted to create something reasonable simple and fast. I vastly underestimated the time and effort required to created something more than a simple clone.&lt;/p&gt;
 
 &lt;p&gt;The game is written in Java and uses LibGDX  as its main framework. Another important part is Spine , advanced tool for 2D animation. Collision detection is achieved with Box2d. Web demo is powered by GWT.&lt;/p&gt;
@@ -74,44 +74,44 @@ This deticated library is sedigned to solve this problem.&lt;/p&gt;
 
 &lt;p&gt;You can play a web demo here! Requires WebGL. One more thing, it is open source! Check it out on &lt;a href=&#34;https://github.com/piotr-j/Super-Flying-Gentlemen&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/sfg1.png&#34; alt=&#34;sfg screenshot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/sfg1.png&#34; alt=&#34;sfg screenshot&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Duality</title>
-      <link>https://piotr-j.github.io/site/project/duality/</link>
+      <link>https://piotr-j.github.io/project/duality/</link>
       <pubDate>Fri, 01 Jan 2016 00:35:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/duality/</guid>
+      <guid>https://piotr-j.github.io/project/duality/</guid>
       <description>&lt;p&gt;Duality was my entry for Ludum Dare 30. It is run from console and was made in Go programming language. Source on available on &lt;a href=&#34;https://github.com/piotr-j/DualityLD30&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/duality.jpg&#34; alt=&#34;duality screenshot 1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/duality.jpg&#34; alt=&#34;duality screenshot 1&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Seamless</title>
-      <link>https://piotr-j.github.io/site/project/seamless/</link>
+      <link>https://piotr-j.github.io/project/seamless/</link>
       <pubDate>Fri, 01 Jan 2016 00:30:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/seamless/</guid>
+      <guid>https://piotr-j.github.io/project/seamless/</guid>
       <description>&lt;p&gt;Seamless was my entry for Ludum Dare 27. Seamless is a simple 2D platformer. As with my other games it is written in Java and uses LibGDX  as its main framework. Character animation is made with Spine . Collision handling is achieved with Box2D . The main goal is to get to next chamber before the 10 second timer runs out. The most aparant issue with the game are the controls. Turns out making Box2D character move in sensible way is quite challenging. You can find the source on &lt;a href=&#34;https://github.com/piotr-j/LudumDare27&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/seamless-1.png&#34; alt=&#34;seamless screenshot 1&#34; /&gt;
-&lt;img src=&#34;https://piotr-j.github.io/site/img/seamless-2.png&#34; alt=&#34;seamless screenshot 2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/seamless-1.png&#34; alt=&#34;seamless screenshot 1&#34; /&gt;
+&lt;img src=&#34;https://piotr-j.github.io/img/seamless-2.png&#34; alt=&#34;seamless screenshot 2&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Project R</title>
-      <link>https://piotr-j.github.io/site/project/project-r/</link>
+      <link>https://piotr-j.github.io/project/project-r/</link>
       <pubDate>Fri, 01 Jan 2016 00:25:00 +0100</pubDate>
       
-      <guid>https://piotr-j.github.io/site/project/project-r/</guid>
+      <guid>https://piotr-j.github.io/project/project-r/</guid>
       <description>&lt;p&gt;Project R is was an university game project I did during my exchange in Spain. The game is written in Java and uses LibGDX  as its main framework. Another important part is Spine , advanced tool for 2D animation. The game features three heroes with various abilities. The goal is to reach to lowest possible level of the dungeon. To do that player has to defeat the monsters and other obstacles. Its optimized for touch input. Some of the art was created by  Dariusz T.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/site/img/projectr.png&#34; alt=&#34;project r screenshot&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://piotr-j.github.io/img/projectr.png&#34; alt=&#34;project r screenshot&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
