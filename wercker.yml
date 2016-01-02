@@ -10,6 +10,6 @@ deploy:
         packages: git ssh-client
     - uetchy/gh-pages@0.3.1:
         token: $GIT_TOKEN
-        #domain: piotrjastrzebski.io
+        domain: piotrjastrzebski.io
         path: public/
         
