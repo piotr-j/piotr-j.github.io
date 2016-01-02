@@ -1,4 +1,4 @@
-baseurl = "https://piotr-j.github.io/site/"
+baseurl = "https://piotr-j.github.io/"
 languageCode = "en-us"
 title = "PiotrJ"
 theme = "ghostwriter-clean"
