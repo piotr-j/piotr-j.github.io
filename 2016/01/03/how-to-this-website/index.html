@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>How to: this website &middot; Piotr J</title>
+        <meta name="description" content="or close?">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.15" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://piotr-j.github.io/css/normalize.css">
+        <link rel="stylesheet" href="https://piotr-j.github.io/css/highlight.css">
+        <link rel="stylesheet" href="https://piotr-j.github.io/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="How to: this website" href="https://piotr-j.github.io/">How to: this website</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://piotr-j.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/evilentity">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/piotr-j/">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/profile/view?id=289548369">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Projects" href="/project/">Projects</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/page/about/">About</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How to: this website</h1>
+    
+        <p class="post-description" itemprop="description">or close?</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2016-01-03" itemprop="datePublished">Sun, Jan 3, 2016</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="http://schema.org/Person">
+            <span itemprop="name">
+                <a href="" itemprop="url" rel="author">Piotr J</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<h1 id="how-this-site-was-made:85c1f74e3b165d8712a92bf4314d49aa">How this site was made</h1>
+
+<p>I&rsquo;m not very experianced web developer, so process of making this website was a bit frustrating. Actually, deployment was the most annoying part.
+Lets start with Hugo.</p>
+
+<h1 id="hugo:85c1f74e3b165d8712a92bf4314d49aa">Hugo</h1>
+
+<p><a href="https://gohugo.io/">Hugo</a> is a static site generator written in <a href="https://golang.org/">Go</a> programming language. Hugo is still in early stages, but it has good documentation and active community.
+Check <a href="https://gohugo.io/overview/quickstart/">hugo quickstart</a> for a short guide how to create your first website in few minutes.</p>
+
+<h1 id="github-pages:85c1f74e3b165d8712a92bf4314d49aa">Github pages</h1>
+
+<p>This page is hosted on github pages, as user page. For a quick guide <a href="https://pages.github.com/">click here</a>.</p>
+
+<h1 id="deployment:85c1f74e3b165d8712a92bf4314d49aa">Deployment</h1>
+
+<p>Deployment is done with <a href="http://wercker.com/">wercker</a>, an automation tool. <a href="https://gohugo.io/tutorials/automated-deployments/">This guide</a> is a great starting point.
+Assuming that you have read the guide, here are some gotchas that I&rsquo;ve found important:</p>
+
+<ul>
+<li>Don&rsquo;t forget to remove the hidden <code>.git</code> folder from cloned theme, as it will cause the theme to be not available in <code>wercker</code> environment</li>
+</ul>
+
+<pre><code class="language-git">rm -rf themes/herring-cove/.git
+</code></pre>
+
+<ul>
+<li>User/organization github site is located in <code>master</code> branch of your repo, <strong>not</strong> <code>gh-pages</code> like project sites.
+This means that you should put your source files in different branch, I&rsquo;ve done it in <code>source</code> branch. Master branch should be empty now, it will be overriden anyway.</li>
+</ul>
+
+<pre><code class="language-git">git checkout --orphan source
+git add .
+git commit -m &quot;Added site sources&quot;
+git push -u origin source
+</code></pre>
+
+<ul>
+<li>Below is my wercker.yml files. I use <code>golang</code> box to save few seconds on build time. Pygments are disabled to save time as well, theme I&rsquo;m using has <code>highlight.js</code> built-in.
+The theme has a <code>-clean</code> suffix, as I forgot to remove <code>.git</code> from it first time. I&rsquo;m using different <code>gh-pages</code> script, as I had trouble with the one linked in official guide
+with user page.</li>
+</ul>
+
+<pre><code class="language-yml">box: golang:1.5.1
+build:
+  steps:
+    - arjen/hugo-build:
+        version: &quot;0.15&quot;
+        theme: &quot;ghostwriter-clean&quot;
+        disable_pygments: true
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - uetchy/gh-pages@0.3.1:
+        token: $GIT_TOKEN
+        domain: piotrjastrzebski.io
+        path: public/
+</code></pre>
+
+<ul>
+<li>on wercker site, in your application settings set <code>master</code> as ignored branch</li>
+</ul>
+
+<h1 id="custom-domain:85c1f74e3b165d8712a92bf4314d49aa">Custom domain</h1>
+
+<p>Last piece of the puzzle, is custom domain support, if you need it. From source side, setting your domain in <code>wercker.yml</code> is all that is required.</p>
+
+<pre><code class="language-yml">    - uetchy/gh-pages@0.3.1:
+        token: $GIT_TOKEN
+        domain: your-domain-here
+        path: public/
+</code></pre>
+
+<p>The hard part is, wrestling with your domain registrar to setup dns correctly. Here are the settings I&rsquo;ve used:
+<img src="/img/dns.jpg" alt="dns" /></p>
+
+<p><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">Read more here</a></p>
+
+<h1 id="final-source:85c1f74e3b165d8712a92bf4314d49aa">Final source</h1>
+
+<p>Current source for this website is available <a href="https://github.com/piotr-j/piotr-j.github.io">here</a>.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+                 <a href="/tags/webdev/">webdev</a>
+            
+        </p>
+    
+
+    <div class="share">
+        <a class="icon-twitter" href="http://twitter.com/share?text=How%20to%3a%20this%20website&url=https%3a%2f%2fpiotr-j.github.io%2f2016%2f01%2f03%2fhow-to-this-website%2f"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fa fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpiotr-j.github.io%2f2016%2f01%2f03%2fhow-to-this-website%2f"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <i class="fa fa-facebook"></i>
+            <span class="hidden">Facebook</span>
+        </a>
+
+        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fpiotr-j.github.io%2f2016%2f01%2f03%2fhow-to-this-website%2f"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fa fa-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a>
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="How to: this website" href="https://piotr-j.github.io/">How to: this website</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2016 / Powered by <a href="http://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://piotr-j.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+        <script src="https://piotr-j.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://piotr-j.github.io/js/scripts.js"></script>
+    </body>
+</html>
+
