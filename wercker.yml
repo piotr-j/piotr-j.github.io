@@ -4,6 +4,7 @@ build:
     - arjen/hugo-build:
         version: "0.15"
         theme: "ghostwriter-clean"
+        disable_pygments: true
 deploy:
   steps:
     - install-packages:
