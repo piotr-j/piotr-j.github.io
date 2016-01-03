@@ -103,11 +103,11 @@ Lets start with Hugo.</p>
 <h1 id="hugo:85c1f74e3b165d8712a92bf4314d49aa">Hugo</h1>
 
 <p><a href="https://gohugo.io/">Hugo</a> is a static site generator written in <a href="https://golang.org/">Go</a> programming language. Hugo is still in early stages, but it has good documentation and active community.
-Check <a href="https://gohugo.io/overview/quickstart/">hugo quickstart</a> for a short guide how to create your first website in few minutes.</p>
+Check <a href="https://gohugo.io/overview/quickstart/">Hugo quickstart</a> for a short guide how to create your first website in few minutes.</p>
 
 <h1 id="github-pages:85c1f74e3b165d8712a92bf4314d49aa">Github pages</h1>
 
-<p>This page is hosted on github pages, as user page. For a quick guide <a href="https://pages.github.com/">click here</a>.</p>
+<p>This page is hosted on github pages, as user page. <a href="https://pages.github.com/">Github pages quick guide</a>.</p>
 
 <h1 id="deployment:85c1f74e3b165d8712a92bf4314d49aa">Deployment</h1>
 
@@ -156,7 +156,10 @@ deploy:
 </code></pre>
 
 <ul>
-<li>on wercker site, in your application settings set <code>master</code> as ignored branch</li>
+<li><p>on wercker site, in application settings -&gt; options -&gt; ignored branches add <code>master</code></p></li>
+
+<li><p>in application settings -&gt; targets -&gt; your deploy target, change <code>master</code> to your custom branch, <code>source</code> in this example
+<img src="/img/targets.jpg" alt="dns" /></p></li>
 </ul>
 
 <h1 id="custom-domain:85c1f74e3b165d8712a92bf4314d49aa">Custom domain</h1>
@@ -172,7 +175,7 @@ deploy:
 <p>The hard part is, wrestling with your domain registrar to setup dns correctly. Here are the settings I&rsquo;ve used:
 <img src="/img/dns.jpg" alt="dns" /></p>
 
-<p><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">Read more here</a></p>
+<p>Read more in <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">github pages documentation</a></p>
 
 <h1 id="final-source:85c1f74e3b165d8712a92bf4314d49aa">Final source</h1>
 

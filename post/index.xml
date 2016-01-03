@@ -26,11 +26,11 @@ Lets start with Hugo.&lt;/p&gt;
 &lt;h1 id=&#34;hugo:85c1f74e3b165d8712a92bf4314d49aa&#34;&gt;Hugo&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is a static site generator written in &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; programming language. Hugo is still in early stages, but it has good documentation and active community.
-Check &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;hugo quickstart&lt;/a&gt; for a short guide how to create your first website in few minutes.&lt;/p&gt;
+Check &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Hugo quickstart&lt;/a&gt; for a short guide how to create your first website in few minutes.&lt;/p&gt;
 
 &lt;h1 id=&#34;github-pages:85c1f74e3b165d8712a92bf4314d49aa&#34;&gt;Github pages&lt;/h1&gt;
 
-&lt;p&gt;This page is hosted on github pages, as user page. For a quick guide &lt;a href=&#34;https://pages.github.com/&#34;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This page is hosted on github pages, as user page. &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages quick guide&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h1 id=&#34;deployment:85c1f74e3b165d8712a92bf4314d49aa&#34;&gt;Deployment&lt;/h1&gt;
 
@@ -79,7 +79,10 @@ deploy:
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;on wercker site, in your application settings set &lt;code&gt;master&lt;/code&gt; as ignored branch&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;on wercker site, in application settings -&amp;gt; options -&amp;gt; ignored branches add &lt;code&gt;master&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;in application settings -&amp;gt; targets -&amp;gt; your deploy target, change &lt;code&gt;master&lt;/code&gt; to your custom branch, &lt;code&gt;source&lt;/code&gt; in this example
+&lt;img src=&#34;https://piotr-j.github.io/img/targets.jpg&#34; alt=&#34;dns&#34; /&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;custom-domain:85c1f74e3b165d8712a92bf4314d49aa&#34;&gt;Custom domain&lt;/h1&gt;
@@ -95,7 +98,7 @@ deploy:
 &lt;p&gt;The hard part is, wrestling with your domain registrar to setup dns correctly. Here are the settings I&amp;rsquo;ve used:
 &lt;img src=&#34;https://piotr-j.github.io/img/dns.jpg&#34; alt=&#34;dns&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/&#34;&gt;Read more here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Read more in &lt;a href=&#34;https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/&#34;&gt;github pages documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;final-source:85c1f74e3b165d8712a92bf4314d49aa&#34;&gt;Final source&lt;/h1&gt;
 
