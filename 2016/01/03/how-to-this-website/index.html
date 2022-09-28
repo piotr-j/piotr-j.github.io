@@ -1,251 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>How to: this website &middot; Piotr J</title>
-        <meta name="description" content="or close?">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.15" />
-        <meta name="robots" content="index,follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://piotr-j.github.io/css/normalize.css">
-        <link rel="stylesheet" href="https://piotr-j.github.io/css/highlight.css">
-        <link rel="stylesheet" href="https://piotr-j.github.io/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        
-
-        <div id="wrapper">
-            <header class="site-header">
-                <div class="container">
-                    <div class="site-title-wrapper">
-                        
-                            <h1 class="site-title">
-                                <a title="How to: this website" href="https://piotr-j.github.io/">How to: this website</a>
-                            </h1>
-                        
-                        <a class="button-square" href="https://piotr-j.github.io/index.xml"><i class="fa fa-rss"></i></a>
-                        
-                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/evilentity">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        
-                        
-                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/piotr-j/">
-                                <i class="fa fa-github-alt"></i>
-                            </a>
-                        
-                        
-                        
-                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/profile/view?id=289548369">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        
-                        
-                    </div>
-
-                    <ul class="site-nav">
-                        
-    <li class="site-nav-item">
-        <a title="Blog" href="/">Blog</a>
-    </li>
-
-    <li class="site-nav-item">
-        <a title="Projects" href="/project/">Projects</a>
-    </li>
-
-    <li class="site-nav-item">
-        <a title="Contact" href="/page/contact/">Contact</a>
-    </li>
-
-    <li class="site-nav-item">
-        <a title="About" href="/page/about/">About</a>
-    </li>
-
-                    </ul>
-                </div>
-            </header>
-
-            <div id="container">
-
-<div class="container">
-    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
-        <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">How to: this website</h1>
-    
-        <p class="post-description" itemprop="description">or close?</p>
-    
-    <p class="post-date">
-        <span>Published <time datetime="2016-01-03" itemprop="datePublished">Sun, Jan 3, 2016</time></span>
-        <span>by</span>
-        <span itemscope="" itemprop="author" itemtype="http://schema.org/Person">
-            <span itemprop="name">
-                <a href="" itemprop="url" rel="author">Piotr J</a>
-            </span>
-        </span>
-    </p>
-</header>
-
-        <div class="post-content clearfix" itemprop="articleBody">
-    
-
-    
-
-<h1 id="how-this-site-was-made:85c1f74e3b165d8712a92bf4314d49aa">How this site was made</h1>
-
-<p>I&rsquo;m not very experianced web developer, so process of making this website was a bit frustrating. Actually, deployment was the most annoying part.
-Lets start with Hugo.</p>
-
-<h1 id="hugo:85c1f74e3b165d8712a92bf4314d49aa">Hugo</h1>
-
-<p><a href="https://gohugo.io/">Hugo</a> is a static site generator written in <a href="https://golang.org/">Go</a> programming language. Hugo is still in early stages, but it has good documentation and active community.
-Check <a href="https://gohugo.io/overview/quickstart/">Hugo quickstart</a> for a short guide how to create your first website in few minutes.</p>
-
-<h1 id="github-pages:85c1f74e3b165d8712a92bf4314d49aa">Github pages</h1>
-
-<p>This page is hosted on github pages, as user page. <a href="https://pages.github.com/">Github pages quick guide</a>.</p>
-
-<h1 id="deployment:85c1f74e3b165d8712a92bf4314d49aa">Deployment</h1>
-
-<p>Deployment is done with <a href="http://wercker.com/">wercker</a>, an automation tool. <a href="https://gohugo.io/tutorials/automated-deployments/">This guide</a> is a great starting point.
-Assuming that you have read the guide, here are some gotchas that I&rsquo;ve found important:</p>
-
-<ul>
-<li>Don&rsquo;t forget to remove the hidden <code>.git</code> folder from cloned theme, as it will cause the theme to be not available in <code>wercker</code> environment</li>
-</ul>
-
-<pre><code class="language-git">rm -rf themes/herring-cove/.git
-</code></pre>
-
-<ul>
-<li>User/organization github site is located in <code>master</code> branch of your repo, <strong>not</strong> <code>gh-pages</code> like project sites.
-This means that you should put your source files in different branch, I&rsquo;ve done it in <code>source</code> branch. Master branch should be empty now, it will be overriden anyway.</li>
-</ul>
-
-<pre><code class="language-git">git checkout --orphan source
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>How to: this website | LubSoft</title><meta name=keywords content="webdev"><meta name=description content="or close?"><meta name=author content="PiotrJ"><link rel=canonical href=https://www.piotrjastrzebski.io/hugo-site-test/2016/01/03/how-to-this-website/><link crossorigin=anonymous href=/hugo-site-test/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/hugo-site-test/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://www.piotrjastrzebski.io/hugo-site-test/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://www.piotrjastrzebski.io/hugo-site-test/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://www.piotrjastrzebski.io/hugo-site-test/favicon-32x32.png><link rel=apple-touch-icon href=https://www.piotrjastrzebski.io/hugo-site-test/apple-touch-icon.png><link rel=mask-icon href=https://www.piotrjastrzebski.io/hugo-site-test/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="How to: this website"><meta property="og:description" content="or close?"><meta property="og:type" content="article"><meta property="og:url" content="https://www.piotrjastrzebski.io/hugo-site-test/2016/01/03/how-to-this-website/"><meta property="article:section" content="post"><meta property="article:published_time" content="2016-01-03T12:08:42+01:00"><meta property="article:modified_time" content="2016-01-03T13:13:27+01:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="How to: this website"><meta name=twitter:description content="or close?"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://www.piotrjastrzebski.io/hugo-site-test/post/"},{"@type":"ListItem","position":2,"name":"How to: this website","item":"https://www.piotrjastrzebski.io/hugo-site-test/2016/01/03/how-to-this-website/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to: this website","name":"How to: this website","description":"or close?","keywords":["webdev"],"articleBody":"How this site was made I’m not very experianced web developer, so process of making this website was a bit frustrating. Actually, deployment was the most annoying part. Lets start with Hugo.\nHugo Hugo is a static site generator written in Go programming language. Hugo is still in early stages, but it has good documentation and active community. Check Hugo quickstart for a short guide how to create your first website in few minutes.\nGithub pages This page is hosted on github pages, as user page. Github pages quick guide.\nDeployment Deployment is done with wercker, an automation tool. This guide is a great starting point. Assuming that you have read the guide, here are some gotchas that I’ve found important:\nDon’t forget to remove the hidden .git folder from cloned theme, as it will cause the theme to be not available in wercker environment rm -rf themes/herring-cove/.git User/organization github site is located in master branch of your repo, not gh-pages like project sites. This means that you should put your source files in different branch, I’ve done it in source branch. Master branch should be empty now, it will be overriden anyway. git checkout --orphan source git add . git commit -m \"Added site sources\" git push -u origin source Below is my wercker.yml files. I use golang box to save few seconds on build time. Pygments are disabled to save time as well, theme I’m using has highlight.js built-in. The theme has a -clean suffix, as I forgot to remove .git from it first time. I’m using different gh-pages script, as I had trouble with the one linked in official guide with user page. box: golang:1.5.1 build: steps: - arjen/hugo-build: version: \"0.15\" theme: \"ghostwriter-clean\" disable_pygments: true deploy: steps: - install-packages: packages: git ssh-client - uetchy/gh-pages@0.3.1: token: $GIT_TOKEN domain: piotrjastrzebski.io path: public/ on wercker site, in application settings -\u003e options -\u003e ignored branches add master\nin application settings -\u003e targets -\u003e your deploy target, change master to your custom branch, source in this example Custom domain Last piece of the puzzle, is custom domain support, if you need it. From source side, setting your domain in wercker.yml is all that is required.\n- uetchy/gh-pages@0.3.1: token: $GIT_TOKEN domain: your-domain-here path: public/ The hard part is, wrestling with your domain registrar to setup dns correctly. Here are the settings I’ve used: Read more in github pages documentation\nFinal source Current source for this website is available here.\n","wordCount":"406","inLanguage":"en","datePublished":"2016-01-03T12:08:42+01:00","dateModified":"2016-01-03T13:13:27+01:00","author":{"@type":"Person","name":"PiotrJ"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.piotrjastrzebski.io/hugo-site-test/2016/01/03/how-to-this-website/"},"publisher":{"@type":"Organization","name":"LubSoft","logo":{"@type":"ImageObject","url":"https://www.piotrjastrzebski.io/hugo-site-test/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://www.piotrjastrzebski.io/hugo-site-test/ accesskey=h title="LubSoft (Alt + H)">LubSoft</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://www.piotrjastrzebski.io/hugo-site-test/ title=blog><span>blog</span></a></li><li><a href=https://www.piotrjastrzebski.io/hugo-site-test/project/ title=projects><span>projects</span></a></li><li><a href=https://www.piotrjastrzebski.io/hugo-site-test/page/about/ title=about><span>about</span></a></li><li><a href=https://www.piotrjastrzebski.io/hugo-site-test/archives/ title=archives><span>archives</span></a></li><li><a href=https://www.piotrjastrzebski.io/hugo-site-test/tags/ title=tags><span>tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>How to: this website</h1><div class=post-description>or close?</div><div class=post-meta><span title='2016-01-03 12:08:42 +0100 +0100'>January 3, 2016</span>&nbsp;·&nbsp;PiotrJ</div></header><div class=post-content><h1 id=how-this-site-was-made>How this site was made<a hidden class=anchor aria-hidden=true href=#how-this-site-was-made>#</a></h1><p>I&rsquo;m not very experianced web developer, so process of making this website was a bit frustrating. Actually, deployment was the most annoying part.
+Lets start with Hugo.</p><h1 id=hugo>Hugo<a hidden class=anchor aria-hidden=true href=#hugo>#</a></h1><p><a href=https://gohugo.io/>Hugo</a> is a static site generator written in <a href=https://golang.org/>Go</a> programming language. Hugo is still in early stages, but it has good documentation and active community.
+Check <a href=https://gohugo.io/overview/quickstart/>Hugo quickstart</a> for a short guide how to create your first website in few minutes.</p><h1 id=github-pages>Github pages<a hidden class=anchor aria-hidden=true href=#github-pages>#</a></h1><p>This page is hosted on github pages, as user page. <a href=https://pages.github.com/>Github pages quick guide</a>.</p><h1 id=deployment>Deployment<a hidden class=anchor aria-hidden=true href=#deployment>#</a></h1><p>Deployment is done with <a href=http://wercker.com/>wercker</a>, an automation tool. <a href=https://gohugo.io/tutorials/automated-deployments/>This guide</a> is a great starting point.
+Assuming that you have read the guide, here are some gotchas that I&rsquo;ve found important:</p><ul><li>Don&rsquo;t forget to remove the hidden <code>.git</code> folder from cloned theme, as it will cause the theme to be not available in <code>wercker</code> environment</li></ul><pre tabindex=0><code class=language-git data-lang=git>rm -rf themes/herring-cove/.git
+</code></pre><ul><li>User/organization github site is located in <code>master</code> branch of your repo, <strong>not</strong> <code>gh-pages</code> like project sites.
+This means that you should put your source files in different branch, I&rsquo;ve done it in <code>source</code> branch. Master branch should be empty now, it will be overriden anyway.</li></ul><pre tabindex=0><code class=language-git data-lang=git>git checkout --orphan source
 git add .
-git commit -m &quot;Added site sources&quot;
+git commit -m &#34;Added site sources&#34;
 git push -u origin source
-</code></pre>
-
-<ul>
-<li>Below is my wercker.yml files. I use <code>golang</code> box to save few seconds on build time. Pygments are disabled to save time as well, theme I&rsquo;m using has <code>highlight.js</code> built-in.
+</code></pre><ul><li>Below is my wercker.yml files. I use <code>golang</code> box to save few seconds on build time. Pygments are disabled to save time as well, theme I&rsquo;m using has <code>highlight.js</code> built-in.
 The theme has a <code>-clean</code> suffix, as I forgot to remove <code>.git</code> from it first time. I&rsquo;m using different <code>gh-pages</code> script, as I had trouble with the one linked in official guide
-with user page.</li>
-</ul>
-
-<pre><code class="language-yml">box: golang:1.5.1
-build:
-  steps:
-    - arjen/hugo-build:
-        version: &quot;0.15&quot;
-        theme: &quot;ghostwriter-clean&quot;
-        disable_pygments: true
-deploy:
-  steps:
-    - install-packages:
-        packages: git ssh-client
-    - uetchy/gh-pages@0.3.1:
-        token: $GIT_TOKEN
-        domain: piotrjastrzebski.io
-        path: public/
-</code></pre>
-
-<ul>
-<li><p>on wercker site, in application settings -&gt; options -&gt; ignored branches add <code>master</code></p></li>
-
-<li><p>in application settings -&gt; targets -&gt; your deploy target, change <code>master</code> to your custom branch, <code>source</code> in this example
-<img src="/img/targets.jpg" alt="dns" /></p></li>
-</ul>
-
-<h1 id="custom-domain:85c1f74e3b165d8712a92bf4314d49aa">Custom domain</h1>
-
-<p>Last piece of the puzzle, is custom domain support, if you need it. From source side, setting your domain in <code>wercker.yml</code> is all that is required.</p>
-
-<pre><code class="language-yml">    - uetchy/gh-pages@0.3.1:
-        token: $GIT_TOKEN
-        domain: your-domain-here
-        path: public/
-</code></pre>
-
-<p>The hard part is, wrestling with your domain registrar to setup dns correctly. Here are the settings I&rsquo;ve used:
-<img src="/img/dns.jpg" alt="dns" /></p>
-
-<p>Read more in <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">github pages documentation</a></p>
-
-<h1 id="final-source:85c1f74e3b165d8712a92bf4314d49aa">Final source</h1>
-
-<p>Current source for this website is available <a href="https://github.com/piotr-j/piotr-j.github.io">here</a>.</p>
-
-</div>
-
-        <footer class="post-footer clearfix">
-    
-        <p class="post-tags">
-            <span>Tagged:</span>
-            
-                 <a href="/tags/webdev/">webdev</a>
-            
-        </p>
-    
-
-    <div class="share">
-        <a class="icon-twitter" href="http://twitter.com/share?text=How%20to%3a%20this%20website&url=https%3a%2f%2fpiotr-j.github.io%2f2016%2f01%2f03%2fhow-to-this-website%2f"
-            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            <i class="fa fa-twitter"></i>
-            <span class="hidden">Twitter</span>
-        </a>
-
-        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpiotr-j.github.io%2f2016%2f01%2f03%2fhow-to-this-website%2f"
-            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-            <i class="fa fa-facebook"></i>
-            <span class="hidden">Facebook</span>
-        </a>
-
-        <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fpiotr-j.github.io%2f2016%2f01%2f03%2fhow-to-this-website%2f"
-           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-           <i class="fa fa-google-plus"></i>
-            <span class="hidden">Google+</span>
-        </a>
-    </div>
-</footer>
-
-        
-    </article>
-</div>
-
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="site-title-wrapper">
-                    <h1 class="site-title">
-                        <a title="How to: this website" href="https://piotr-j.github.io/">How to: this website</a>
-                    </h1>
-                    <a class="button-square button-jump-top js-jump-top" href="#">
-                        <i class="fa fa-angle-up"></i>
-                    </a>
-                </div>
-
-                <p class="footer-copyright">
-                    <span>&copy; 2016 / Powered by <a href="http://gohugo.io/">Hugo</a></span>
-                </p>
-                <p class="footer-copyright">
-                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
-                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
-                </p>
-            </div>
-        </footer>
-
-        <script src="https://piotr-j.github.io/js/jquery-1.11.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
-        <script src="https://piotr-j.github.io/js/jquery.fitvids.js"></script>
-        <script src="https://piotr-j.github.io/js/scripts.js"></script>
-    </body>
-</html>
-
+with user page.</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yml data-lang=yml><span style=display:flex><span><span style=color:#f92672>box</span>: <span style=color:#ae81ff>golang:1.5.1</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>build</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>steps</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>arjen/hugo-build</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>version</span>: <span style=color:#e6db74>&#34;0.15&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>theme</span>: <span style=color:#e6db74>&#34;ghostwriter-clean&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>disable_pygments</span>: <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>deploy</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>steps</span>:
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>install-packages</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>packages</span>: <span style=color:#ae81ff>git ssh-client</span>
+</span></span><span style=display:flex><span>    - <span style=color:#f92672>uetchy/gh-pages@0.3.1</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>token</span>: <span style=color:#ae81ff>$GIT_TOKEN</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>domain</span>: <span style=color:#ae81ff>piotrjastrzebski.io</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>path</span>: <span style=color:#ae81ff>public/</span>
+</span></span></code></pre></div><ul><li><p>on wercker site, in application settings -> options -> ignored branches add <code>master</code></p></li><li><p>in application settings -> targets -> your deploy target, change <code>master</code> to your custom branch, <code>source</code> in this example
+<img loading=lazy src=/img/targets.jpg alt=dns></p></li></ul><h1 id=custom-domain>Custom domain<a hidden class=anchor aria-hidden=true href=#custom-domain>#</a></h1><p>Last piece of the puzzle, is custom domain support, if you need it. From source side, setting your domain in <code>wercker.yml</code> is all that is required.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yml data-lang=yml><span style=display:flex><span>    - <span style=color:#f92672>uetchy/gh-pages@0.3.1</span>:
+</span></span><span style=display:flex><span>        <span style=color:#f92672>token</span>: <span style=color:#ae81ff>$GIT_TOKEN</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>domain</span>: <span style=color:#ae81ff>your-domain-here</span>
+</span></span><span style=display:flex><span>        <span style=color:#f92672>path</span>: <span style=color:#ae81ff>public/</span>
+</span></span></code></pre></div><p>The hard part is, wrestling with your domain registrar to setup dns correctly. Here are the settings I&rsquo;ve used:
+<img loading=lazy src=/img/dns.jpg alt=dns></p><p>Read more in <a href=https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/>github pages documentation</a></p><h1 id=final-source>Final source<a hidden class=anchor aria-hidden=true href=#final-source>#</a></h1><p>Current source for this website is available <a href=https://github.com/piotr-j/piotr-j.github.io>here</a>.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://www.piotrjastrzebski.io/hugo-site-test/tags/webdev/>webdev</a></li></ul></footer></article></main><footer class=footer><span>© 2022 Piotr Jastrzębski</span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
