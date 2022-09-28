@@ -2,9 +2,8 @@
 author = "PiotrJ"
 date = "2016-01-01T00:00:00+01:00"
 description = "my short bio"
-tags = ["about me"]
-title = "about"
-
+tags = ["about us"]
+title = "About"
 +++
 
 My name is Piotr Jastrzębski, I'm a graduate of [Lublin University of Technology](http://en.pollub.pl/) in Computer Science with speciality in Software Development Technologies. Currently I focus on making games and tools in Java.

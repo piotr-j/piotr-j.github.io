@@ -1,0 +1,56 @@
+baseURL: https://www.piotrjastrzebski.io/hugo-site-test/
+languageCode: en-us
+title: LubSoft
+theme: PaperMod
+copyright: © 2022 Piotr Jastrzębski
+
+enableGitInfo: true
+Params:
+  useHLJS: true
+  commit: "https://github.com/piotr-j/piotr-j.github.io/tree/"
+  description: "My site with the stuff" # optional
+  mainSections: ["post", "project"]
+
+  homeInfoParams:
+    Title: "Welcome to LubSoft"
+    Content: We are working on weird stuff! And be 'we' I mean mostly me.
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/evilentity"
+    - name: github
+      url: "https://github.com/piotr-j"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/piotrjastrzebski1/"
+
+Author:
+    name: "Piotr J"
+    twitter: "evilentity"
+    github: "piotr-j"
+    linkedin: "piotrjastrzebski1"
+
+permalinks:
+    post: "/:year/:month/:day/:title/" 
+
+menu:
+  main:
+    - identifier: blog
+      name: blog
+      url: "/"
+      weight: 10
+    - identifier: projects
+      name: projects
+      url: /project/
+      weight: 20
+    - identifier: about
+      name: about
+      url: /page/about/
+      weight: 30
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 40
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 50
