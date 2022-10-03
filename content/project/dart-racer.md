@@ -7,10 +7,10 @@ title = "Dart Racer"
 +++
 
 
-Dart Racer is currently my main side project. It's a VR racing game.
-Hopefully soon it will be on app lab!
+Dart Racer is currently my main side(?) project. It's a VR racing game.
+Hopefully soon it will be on app lab! Just need to do some pesky assets...
 
 
 
-Got do make better video sometime...
-{{< youtube DxDC5Tnlerg >}}
+Check out gameplay!
+{{< youtube KRwGRfL3uis >}}
