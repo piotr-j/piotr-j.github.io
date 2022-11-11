@@ -31,6 +31,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: master
           publish_dir: ./public
-        env:
-          CNAME: www.piotrjastrzebski.io
+          cname: www.piotrjastrzebski.io
+        
 
