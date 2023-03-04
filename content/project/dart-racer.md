@@ -7,10 +7,13 @@ title = "Dart Racer"
 +++
 
 
-Dart Racer is currently my main side(?) project. It's a VR racing game.
-Hopefully soon it will be on app lab! Just need to do some pesky assets...
+Dart Racer is currently my main side project. It's a VR racing game.
+It is out on App Lab now!
+
+You can add it to your library on [App Lab](https://www.oculus.com/experiences/quest/4370464433009119) or [Side Quest](https://sidequestvr.com/app/14160/dart-racer).
+
+There is also a [Discord](https://discord.com/invite/sDgGjSXAbq) community for latest info!
 
 
-
-Check out gameplay!
-{{< youtube KRwGRfL3uis >}}
+Check out latest trailer!
+{{< youtube oRSlzrXrvSo >}}
