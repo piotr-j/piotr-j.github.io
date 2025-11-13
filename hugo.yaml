@@ -22,8 +22,8 @@ Params:
       url: "https://github.com/piotr-j"
     - name: linkedin
       url: "https://www.linkedin.com/in/piotrjastrzebski1/"
-
-Author:
+      
+  Author:
     name: "Piotr J"
     twitter: "evilentity"
     github: "piotr-j"
