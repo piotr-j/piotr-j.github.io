@@ -13,8 +13,7 @@ I currently work on a couple of projects...
 
 My solo dev adventure, hybrid flat and vr arcade racing game. Some help here and there from freelancers.
 
-Wishlist on [Steam](https://store.steampowered.com/app/2401910/Dart_Racer/)!
-Buy EA on [Meta Quest](https://www.meta.com/en-gb/experiences/dart-racer/6918614874833696/)!
+Wishlist on [Steam](https://store.steampowered.com/app/2401910/Dart_Racer/) or buy Early Access on [Meta Quest](https://www.meta.com/en-gb/experiences/dart-racer/6918614874833696/)!
 
 Perhaps more platforms in the future?
 
@@ -28,8 +27,8 @@ Join our [Discord](https://discord.com/invite/sDgGjSXAbq) for news and sneak pea
 Cozy hidden object puzzle adventure game. I'm a programmer, my fiancé is doing pretty much everything else.
 
 
-Play in your browser on [Itch.io](https://evilentity.itch.io/spooky-mansion)!
-Wishlist on [Steam](https://store.steampowered.com/app/3605410/The_Witchs_Spooky_Mansion/)!
+Play in your browser on [Itch.io](https://evilentity.itch.io/spooky-mansion)! You can also
+wishlist on [Steam](https://store.steampowered.com/app/3605410/The_Witchs_Spooky_Mansion/) to get notified when its out.
 
 {{< youtube -OjjkaByRrQ >}}
 
