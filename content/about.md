@@ -6,11 +6,8 @@ tags = ["about us"]
 title = "About"
 +++
 
-My name is Piotr Jastrzębski, I'm a graduate of [Lublin University of Technology](http://en.pollub.pl/) in Computer Science with speciality in Software Development Technologies. Currently I focus on making games and tools in Java.
+My name is Piotr Jastrzębski, I'm a graduate of [Lublin University of Technology](http://en.pollub.pl/) in Computer Science with speciality in Software Development Technologies. Currently I focus on making games in Unreal Engine and Godot.
 
-I've found Java to be most usefull in cross-platform development. I've used it mainly for games with the LibGDX framework and for Android apps. 
-I also have some experience in Python, I've created many cli scripts and some GUI applications with PyQT and WxPython. 
-
-Besdides that I've worked with various technologies such as C/C++, C#, Haskell, Excel VBA, PHP, JavaScript, Ruby and many others. I'm a generalist.
+I've also worked in Java with focus on LibGDX framework. Touched Spring, made some app in Python too
 
 Some of my work is open source and you can check it out at [Github](github.com/piotr-j/).
